@@ -13,7 +13,7 @@
 		},
 	"\/app\/assets\/css\/welcome.css.css": {
 		"fileType": 16,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/assets\/css\/welcome.css.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -94,7 +94,7 @@
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/assets\/stylesheets\/_welcome.css.scss",
 		"outputAbbreviatedPath": "\/app\/assets\/css\/_welcome.css.css",
