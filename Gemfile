@@ -27,6 +27,8 @@ gem 'font-awesome-sass'
 gem 'pygments.rb', '~> 0.6.3'
 gem 'redcarpet'
 
+gem 'friendly_id', '~> 5.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
