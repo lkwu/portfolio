@@ -1,18 +1,14 @@
-.col-1, .col-2, .col-3 {
-  float: left;
-}
-
-.col-1 {
-  width: 45%;
-  padding: 0 5% 0 2.5%;
-}
-
-.col-2, .col-3 {
-  width: 27.5%;
-  padding: 0 2.5%;
-}
-
 .homepage_content {
+  text-align: center;
+  margin: -2em auto 0;
+  width: 65%;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  hr {
+    margin: 1rem auto 2rem;
+    width: 25em;
+  }
   h2 {
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -32,7 +28,7 @@
   }
   .date {
     font-size: .8rem;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     color: $light;
   }
   p {
@@ -41,7 +37,10 @@
 }
 
 .about {
-  padding: 0 7.5% 0 0;
+  padding: 0 4em;
+  p {
+    text-align: justify;
+  }
   a {
     color: $highlight;
     font-size: 700;
