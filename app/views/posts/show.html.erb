@@ -16,10 +16,25 @@
     </div>
   <% end %>
 
+  <div id="post-order" class="clearfix">
+    <div class="pre-post">
+      <% if @post.prev %>
+        <span>&laquo;</span> <%= link_to @post.prev.title, @post.prev %>
+      <% end %>
+    </div>
+
+    <div class="next-post">
+      <% if @post.next %>
+        <%= link_to @post.next.title, @post.next %> <span>&raquo;</span>
+      <% end %>
+    </div>
+  </div>
+
+
   <hr>
 
   <div id="share_box">
-    <p>Share Lorem ipsum dolor</p>
+    <p>Share <%= @post.title %></p>
     <a onclick="javascript:window.open('https://twitter.com/share?text=<%= @post.title %> by @lunkaiwu - &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300'); void(0);">
       <i class="fa fa-twitter"></i>
     </a>
