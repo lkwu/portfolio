@@ -1,5 +1,9 @@
 module ApplicationHelper
 
+  def title(page_title)
+    content_for :title, page_title.to_s
+  end
+
   class HTMLwithPygments < Redcarpet::Render::HTML
     def block_code(code, language)
       Pygments.highlight(code, lexer: language)
