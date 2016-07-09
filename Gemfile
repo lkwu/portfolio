@@ -28,6 +28,7 @@ gem 'pygments.rb', '~> 0.6.3'
 gem 'redcarpet'
 
 gem 'friendly_id', '~> 5.1'
+gem 'babosa'
 
 gem 'will_paginate', '~> 3.1'
 
