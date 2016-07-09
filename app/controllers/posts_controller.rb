@@ -23,7 +23,7 @@ class PostsController < ApplicationController
 
   def show
     if request.path != post_path(@post)
-      return redirect_to @post
+      return redirect_to @post, status: :moved_permanently
     end
   end
 
