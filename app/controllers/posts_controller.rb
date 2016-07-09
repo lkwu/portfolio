@@ -22,6 +22,9 @@ class PostsController < ApplicationController
   end
 
   def show
+    if request.path != post_path(@post)
+      return redirect_to @post
+    end
   end
 
   def edit
