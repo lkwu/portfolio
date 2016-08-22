@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  resources :posts, :only => [ :new, :index ]
+  resources :posts, :only => [ :new, :index, :create ]
   get "posts/:id", to: redirect("/%{id}")
   resources :posts, :path => "", :except => [ :new, :index ]
   resources :projects
