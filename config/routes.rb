@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-
+  get 'welcome/index'
+  get '/about' =>'welcome#about'
+  resources :projects
   devise_for :users
   resources :posts, :only => [ :new, :index, :create ]
   get "posts/:id", to: redirect("/%{id}")
   resources :posts, :path => "", :except => [ :new, :index ]
-  resources :projects
   resources :contacts, only: [:new, :create]
 
-  get 'welcome/index'
-  get '/about' =>'welcome#about'
+
   root 'welcome#index'
 
   get '*path' => redirect('/')
