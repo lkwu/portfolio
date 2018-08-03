@@ -24,7 +24,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'font-awesome-sass'
 
-gem 'pygments.rb', '~> 0.6.3'
+gem 'yajl-ruby'
+gem 'pygments.rb'
 gem 'redcarpet'
 
 gem 'friendly_id', '~> 5.1'
